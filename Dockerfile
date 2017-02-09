@@ -10,6 +10,7 @@ RUN apt-get install -y keyboard-configuration
 RUN unset DEBIAN_FRONTEND
 RUN apt-get install -y lubuntu-default-settings
 RUN apt-get install -y \
+        x11vnc\
         vnc-java\
         xvfb\
         abiword anacron\
