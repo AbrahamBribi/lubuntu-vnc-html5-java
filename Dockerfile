@@ -2,13 +2,13 @@ FROM ubuntu
 
 MAINTAINER Abraham Bribiesca
 
+RUN echo "deb http://archive.ubuntu.com/ubuntu/ xenial-updates multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu/ xenial multiverse" >> /etc/apt/sources.list
 RUN apt-get update && apt-get dist-upgrade -y
 RUN export DEBIAN_FRONTEND=noninteractive
 RUN apt-get install -y keyboard-configuration
 RUN unset DEBIAN_FRONTEND
 RUN apt-get install -y lubuntu-default-settings
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ xenial-updates multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://archive.ubuntu.com/ubuntu/ xenial multiverse" >> /etc/apt/sources.list
 RUN apt-get install -y \
         vnc-java\
         xvfb\
