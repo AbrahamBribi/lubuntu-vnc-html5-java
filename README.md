@@ -8,7 +8,7 @@ The image include office tools (Galculator, Okular, Document Viewer, KolourPaint
 
 Usage
 
-docker run -d -t -i -p 5800:5800 -p 5900:5900 -p 6080:6080 abrahamb/lubuntu-vnc
+docker run -d -t -i -p 5800:5800 -p 5900:5900 -p 6080:6080 abrahamb/lubuntu-vnc-html5-java
 
 Then
 
