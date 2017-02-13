@@ -46,4 +46,5 @@ RUN git clone https://github.com/novnc/noVNC.git /root/noVNC/
 RUN wget https://raw.githubusercontent.com/AbrahamBribi/lubuntu-vnc-html5-java/master/startup.sh
 RUN mv startup.sh /root/
 RUN chmod 0755 /root/startup.sh 
+RUN apt-get clean all
 CMD /root/startup.sh
